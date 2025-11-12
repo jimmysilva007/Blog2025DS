@@ -1,0 +1,104 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 4px solid #e63946;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    color: #f1faee;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #a8dadc;
+}
+
+/* Grid principal */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Cartões */
+.card {
+    background: #1b263b;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f1faee;
+    color: #1b263b;
+}
+
+/* Página individual */
+.player {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(27, 38, 59, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+}
+
+.player img {
+    width: 60%;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 4px solid #e63946;
+}
+
+.player p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: #f1faee;
+    text-align: justify;
+}
